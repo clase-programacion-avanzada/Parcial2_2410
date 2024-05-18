@@ -1,0 +1,70 @@
+Evento: Evento Academico 1
+Fecha: 2024-05-18
+Capacidad: 3 participantes 
+Tipo: Academico
+    Pedro - pedropedropedro@javeriana.edu.co - Facultad de Ingenieria
+    Maria - m@javeriana.edu.co - Facultad de Ciencias
+    Luis - luigi@javeriana.edu.co - Facultad de Medicina
+Evento: Evento Academico 2
+Fecha: 2024-05-25
+Capacidad: 2 participantes 
+Tipo: Academico
+    Pedro - pedropedropedro@javeriana.edu.co - Facultad de Ingenieria
+    Maria - m@javeriana.edu.co - Facultad de Ciencias
+Evento: Evento Academico 3
+Fecha: 2024-06-01
+Capacidad: 1 participantes 
+Tipo: Academico
+    Luis - luigi@javeriana.edu.co - Facultad de Medicina
+Evento: Evento Academico 4
+Fecha: 2024-06-18
+Capacidad: 4 participantes 
+Tipo: Academico
+    Pedro - pedropedropedro@javeriana.edu.co - Facultad de Ingenieria
+    Maria - m@javeriana.edu.co - Facultad de Ciencias
+    Luis - luigi@javeriana.edu.co - Facultad de Medicina
+    Charisandra - chari@javeriana.edu.co - Facultad de Ingeniería
+Evento: Evento Academico 5
+Fecha: 2025-05-18
+Capacidad: 5 participantes 
+Tipo: Academico
+    Pedro - pedropedropedro@javeriana.edu.co - Facultad de Ingenieria
+    Maria - m@javeriana.edu.co - Facultad de Ciencias
+    Luis - luigi@javeriana.edu.co - Facultad de Medicina
+    Charisandra - chari@javeriana.edu.co - Facultad de Ingeniería
+    Jorge - j@javeriana.edu.co - Facultad de Negocios
+Evento: Evento Externo 1
+Fecha: 2024-05-18
+Capacidad: 3 participantes 
+Tipo: Externo
+    Charisandra - chari@javeriana.edu.co - Facultad de Ingeniería
+    Juan - juan@colpatria.com - Colpatria
+    Alejandro - alealejandro@bancolombia.com - Bancolombia
+Evento: Evento Externo 2
+Fecha: 2024-05-25
+Capacidad: 2 participantes 
+Tipo: Externo
+    Juan - juan@colpatria.com - Colpatria
+    Alejandro - alealejandro@bancolombia.com - Bancolombia
+Evento: Evento Externo 3
+Fecha: 2024-06-01
+Capacidad: 1 participantes 
+Tipo: Externo
+    Roberto - roberto@globant.com - Globant
+Evento: Evento Externo 4
+Fecha: 2024-06-18
+Capacidad: 4 participantes 
+Tipo: Externo
+    Juan - juan@colpatria.com - Colpatria
+    Alejandro - alealejandro@bancolombia.com - Bancolombia
+    Roberto - roberto@globant.com - Globant
+    Anahi - anahi@endava.com - Endava
+Evento: Evento Externo 5
+Fecha: 2025-05-18
+Capacidad: 5 participantes 
+Tipo: Externo
+    Juan - juan@colpatria.com - Colpatria
+    Alejandro - alealejandro@bancolombia.com - Bancolombia
+    Roberto - roberto@globant.com - Globant
+    Anahi - anahi@endava.com - Endava
+    Artemisa - art@starbucks.com - Starbucks
