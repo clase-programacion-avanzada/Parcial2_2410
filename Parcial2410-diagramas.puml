@@ -1,0 +1,63 @@
+@startuml
+skinparam classAttributeIconSize 0
+class GestorEventos {
+
+
+
+    + GestorEventos()
+    + agregarEvento(evento: Evento)
+    + buscarEventoPorNombre(nombre: String): Evento
+    + buscarEventosPorFecha(fecha: Date): List<Evento>
+    + buscarEventosPorFecha(dechaInicio: Date, fechaFin: Date): List<Evento>
+
+
+}
+
+
+abstract class Participante {
+    - nombre: String
+    - correo: String
+
+    + Participante(nombre: String, correo: String)
+
+}
+
+class ParticipanteExterno extends Participante {
+    - entidad: String
+
+}
+
+class ParticipanteInterno extends Participante {
+    - facultad: String
+}
+
+
+abstract class Evento {
+    - nombre: String
+    - capacidad: int
+    - fecha: Date
+
+    + Evento(nombre: String, capacidad: int, fecha: Date)
+    + {abstract} calcularCosto(): int
+    + equals(obj: Object): boolean
+}
+
+class EventoAcademico extends Evento {
+    - {static} TARIFA_FIJA: int
+    - facultad: String
+
+    + calcularCosto(): int
+
+}
+
+class EventoExterno extends Evento {
+    - patrocinador: String
+    - tarifaPorParticipante: int
+
+    + calcularCosto(): int
+}
+
+' Relaciones
+GestorEventos "1" o- "*" Evento :eventos >
+Evento "1" o- "*" Participante :participantes >
+@enduml
