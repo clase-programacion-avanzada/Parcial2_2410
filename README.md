@@ -1,4 +1,4 @@
-# Solución del Parcial 2024-1
+# Solución del Parcial 2 2024-1
 
 ## 1. Conceptos (20 puntos) 
 
