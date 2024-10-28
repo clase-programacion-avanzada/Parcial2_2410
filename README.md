@@ -110,7 +110,6 @@
 
 ## 2. Gestor de eventos (80 puntos)
 
-![Diagrama de clases](./assets/Parcial2410-diagramas.png)
 
 Usted ha sido contratado por la Universidad San Bonifacio para desarrollar un sistema que gestione los eventos de dicha institución. El sistema debe permitir el registro de eventos, la administración de una colección de eventos y el almacenamiento de la información en archivos de texto y binarios. Además, debe incluir un registro de los participantes en cada evento.
 
@@ -118,7 +117,7 @@ Desafortunadamente, el desarrollador que estaba trabajando en el sistema renunci
 
 Por el momento, cuenta con la estructura al final de este documento completamente implementada (note que los métodos escritos en cursiva son abstractos). También dispone de todos los métodos *set* y *get* para los atributos de todas las clases, excepto para la clase `ParticipanteInterno`.
 
-Como puede observar, falta toda la parte de gestión de participantes. El objetivo es que cada evento tenga asociada una lista de participantes, quienes pueden ser de dos tipos: externos o internos (es decir, profesores, estudiantes o egresados). De cada participante se almacenará únicamente su nombre y su correo electrónico. Además, los participantes internos contarán con un atributo que indica el nombre de la facultad a la que pertenecen, mientras que los externos tendrán un atributo con el nombre de la entidad para la que trabajan (este puede ser una cadena vacía si no tienen empleo).
+Como puede observar, falta toda la parte de gestión de participantes. El objetivo es que cada evento tenga asociada una lista de participantes, quienes pueden ser de dos tipos: externos o internos (i.e profesores, estudiantes, egresados). De cada participante se almacenará únicamente su nombre y su correo electrónico. Además, los **participantes internos** contarán con un atributo que indica el nombre de la facultad a la que pertenecen, mientras que los externos tendrán un atributo con el nombre de la entidad para la que trabajan (este puede ser una cadena vacía si no tienen empleo).
 
 Para completar esta tarea, por favor realice las siguientes acciones:
 
@@ -164,3 +163,4 @@ Para completar esta tarea, por favor realice las siguientes acciones:
         ...
     ```
 </br></br>Para cualquiera de estos métodos, puede utilizar otros métodos desarrollados en distintos puntos de este parcial. En caso de que necesite utilizar métodos adicionales o auxiliares que no estén incluidos en este enunciado, deberá implementarlos completamente.
+![Diagrama de clases](./assets/Parcial2410-diagramas.png)
