@@ -73,15 +73,15 @@ public abstract class Evento implements Serializable {
     public void agregarParticipante(Participante participante) {
 
         if (participantes.size() >= capacidad) {
-            throw new RuntimeException("El evento ya alcanzó su capacidad máxima");
+            throw new IllegalArgumentException("El evento ya alcanzó su capacidad máxima");
         }
 
         if (this instanceof EventoAcademico && participante instanceof ParticipanteExterno) {
-            throw new RuntimeException("No se puede agregar un participante externo a un evento académico");
+            throw new IllegalArgumentException("No se puede agregar un participante externo a un evento académico");
         }
 
         if (participanteYaEstaRegistrado(participante)) {
-            throw new RuntimeException("El participante ya está registrado en el evento");
+            throw new IllegalArgumentException("El participante ya está registrado en el evento");
         }
 
         participantes.add(participante);
