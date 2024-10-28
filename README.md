@@ -128,22 +128,22 @@ Para completar esta tarea, por favor realice las siguientes acciones:
    - se intenta inscribir un participante externo en un evento académico, o
    - ya existe un participante registrado con el mismo correo electrónico.</br></br>
 
-3. **[20 pts]** Implemente un método `agregarParticipante` en la clase `GestorEventos` que reciba como parámetros el nombre del evento (no hay eventos con nombres duplicados) y un objeto que represente al participante. Este método debe agregar el participante a la lista de participantes del evento. Debe lanzar una excepción en cualquiera de los siguientes casos:
+3. **[20 pts]** Implemente un [método `agregarParticipante` en la clase `GestorEventos`](./src/main/java/org/example/model/GestorEventos.java#L67) que reciba como parámetros el nombre del evento (no hay eventos con nombres duplicados) y un objeto que represente al participante. Este método debe agregar el participante a la lista de participantes del evento. Debe lanzar una excepción en cualquiera de los siguientes casos:
    - Se intentó inscribir un participante externo en un evento académico.
    - El participante ya está registrado en otro evento en la misma fecha.
    - El participante ya estaba registrado en el evento.
    - El evento ya alcanzó su límite de capacidad.
    Ayuda: Evalúe la opción de escribir métodos auxiliares para facilitar el desarrollo de este punto.</br></br>
    
-4. **[10 pts]** Implemente el método `calcularCosto` en las clases `EventoAcademico` y `EventoExterno`. Tenga en cuenta que:
+4. **[10 pts]** Implemente el método `calcularCosto` en las [clases `EventoAcademico`](./src/main/java/org/example/model/evento/EventoAcademico.java#L25) y [`EventoExterno`](./src/main/java/org/example/model/evento/EventoExterno.java#L40). Tenga en cuenta que:
    - En un evento académico, se cobra una tarifa fija por participante (`TARIFA_FIJA`). Sin embargo, los participantes que pertenecen a la facultad organizadora están exentos de este cobro.
    - En los eventos externos, hay una tarifa por participante, pero aquellos que pertenecen a la entidad patrocinadora reciben un descuento del 50% sobre la tarifa.</br></br>
 
-5. **[5 pts]** Implemente un método `serializar` en la clase `GestorEventos` que almacene todos los eventos registrados en un archivo serializado. Este método debe recibir como parámetro un `String` con la ruta del archivo donde se desea guardar la información. Puede asumir que todas las clases del sistema implementan la interfaz `Serializable`. </br></br>
+5. **[5 pts]** Implemente un [método `serializar` en la clase `GestorEventos`](./src/main/java/org/example/model/GestorEventos.java#L98) que almacene todos los eventos registrados en un archivo serializado. Este método debe recibir como parámetro un `String` con la ruta del archivo donde se desea guardar la información. Puede asumir que todas las clases del sistema implementan la interfaz `Serializable`. </br></br>
 
-6. **[5 pts]** Implemente un método `deserializar` en la clase `GestorEventos` que cargue los eventos desde un archivo serializado. En caso de que ya existan eventos registrados, estos deben ser eliminados antes de cargar los nuevos. Este método debe recibir como parámetro un `String` con la ruta del archivo desde donde se desea cargar la información. Puede asumir que todas las clases del sistema implementan la interfaz `Serializable`.</br></br>
+6. **[5 pts]** Implemente un [método `deserializar` en la clase `GestorEventos`](./src/main/java/org/example/model/GestorEventos.java#L109) que cargue los eventos desde un archivo serializado. En caso de que ya existan eventos registrados, estos deben ser eliminados antes de cargar los nuevos. Este método debe recibir como parámetro un `String` con la ruta del archivo desde donde se desea cargar la información. Puede asumir que todas las clases del sistema implementan la interfaz `Serializable`.</br></br>
 
-7. **[20 pts]** Implemente un método `reporteEventos` en la clase `GestorEventos` que reciba la ruta de un archivo de texto e imprima en él un reporte con el siguiente formato:
+7. **[20 pts]** Implemente un [método `reporteEventos` en la clase `GestorEventos`](./src/main/java/org/example/model/GestorEventos.java#L135) que reciba la ruta de un archivo de texto e imprima en él un reporte con el siguiente formato:
     ```
       Evento: <Nombre>
       Fecha: <Fecha>
@@ -164,3 +164,4 @@ Para completar esta tarea, por favor realice las siguientes acciones:
     ```
 </br></br>Para cualquiera de estos métodos, puede utilizar otros métodos desarrollados en distintos puntos de este parcial. En caso de que necesite utilizar métodos adicionales o auxiliares que no estén incluidos en este enunciado, deberá implementarlos completamente.
 ![Diagrama de clases](./assets/Parcial2410-diagramas.png)
+
