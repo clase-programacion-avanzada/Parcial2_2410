@@ -121,9 +121,9 @@ Como puede observar, falta toda la parte de gestión de participantes. El objeti
 
 Para completar esta tarea, por favor realice las siguientes acciones:
 
-1. **[5 pts]** Complete la clase `ParticipanteInterno`. Para esto, declare toda la clase, un constructor con parámetros y los métodos *get* y *set* para el atributo `facultad`. </br></br>
+1. **[5 pts]** [Complete la clase `ParticipanteInterno`](.src/main/java/org/example/model/participante/ParticipanteInterno.java). Para esto, declare toda la clase, un constructor con parámetros y los métodos *get* y *set* para el atributo `facultad`. </br></br>
 
-2. **[15 pts]** Implemente un método en la clase `Evento` que registre un participante en el evento. El método debe recibir un objeto de tipo `Participante` como parámetro y agregarlo a la lista de participantes del evento. Debe lanzar una excepción si:
+2. **[15 pts]** Implemente un [método en la clase `Evento`](src/main/java/org/example/model/evento/Evento.java#73) que registre un participante en el evento. El método debe recibir un objeto de tipo `Participante` como parámetro y agregarlo a la lista de participantes del evento. Debe lanzar una excepción si:
    - el evento ya alcanzó su capacidad límite,
    - se intenta inscribir un participante externo en un evento académico, o
    - ya existe un participante registrado con el mismo correo electrónico.</br></br>
