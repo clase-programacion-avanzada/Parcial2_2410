@@ -2,6 +2,7 @@ package org.example.model.evento;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import org.example.model.participante.Participante;
@@ -107,4 +108,12 @@ public abstract class Evento implements Serializable {
             + "Tipo: ";
     }
 
+    public List<String> obtenerReporteParticipantes() {
+
+        List<String> reporte = new ArrayList<>();
+        for (Participante p : participantes) {
+            reporte.add(p.toString());
+        }
+        return reporte;
+    }
 }

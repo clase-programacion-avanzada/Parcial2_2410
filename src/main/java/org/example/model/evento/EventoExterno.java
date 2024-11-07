@@ -41,7 +41,8 @@ public class EventoExterno extends Evento implements Serializable {
         int total = 0;
 
         for (Participante p : participantes) {
-            if (p instanceof ParticipanteExterno pe && pe.getEntidad().equals(patrocinador)) {
+            if (p instanceof ParticipanteExterno pe
+                && pe.getEntidad().equals(patrocinador)) {
                 total += tarifaPorParticipante*0.5;
             } else {
                 total += tarifaPorParticipante;
@@ -49,7 +50,6 @@ public class EventoExterno extends Evento implements Serializable {
         }
 
         return total;
-
     }
 
     @Override

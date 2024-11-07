@@ -26,6 +26,7 @@ public class EventoAcademico extends Evento implements Serializable {
         int total = 0;
 
         for (Participante p : participantes) {
+
             if (!(p instanceof ParticipanteInterno pi) || !pi.getFacultad().equals(facultad)) {
                 total += TARIFA_FIJA;
             }

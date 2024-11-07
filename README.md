@@ -165,3 +165,4 @@ Para completar esta tarea, por favor realice las siguientes acciones:
 </br></br>Para cualquiera de estos métodos, puede utilizar otros métodos desarrollados en distintos puntos de este parcial. En caso de que necesite utilizar métodos adicionales o auxiliares que no estén incluidos en este enunciado, deberá implementarlos completamente.
 ![Diagrama de clases](./assets/Parcial2410-diagramas.png)
 
+Puede probar la solución ejecutando el archivo [`Main.java`](./src/main/java/org/example/Main.java).

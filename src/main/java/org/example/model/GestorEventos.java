@@ -64,7 +64,8 @@ public class GestorEventos {
     //b) Se intentó inscribir un participante externo en un evento académico
     //c) El participante ya está registrado en otro evento en esa inis- ma fecha
     //d) El participante ya estaba registrado en el evento e) El evento ya alcanzó su capacidad límite
-    public void agregarParticipante(String nombreEvento, Participante participante) {
+    public void agregarParticipante(String nombreEvento,
+                                    Participante participante) {
         Evento evento = buscarEventoPorNombre(nombreEvento);
         if (evento == null) {
             throw new IllegalArgumentException("No se encontró el evento");
@@ -83,7 +84,8 @@ public class GestorEventos {
         List<Evento> eventosEnFecha = buscarEventosPorFecha(fecha);
 
         for (Evento eventoEnFecha : eventosEnFecha) {
-            if (!eventoEnFecha.equals(evento) && eventoEnFecha.participanteYaEstaRegistrado(participante)) {
+            if (!eventoEnFecha.equals(evento)
+                && eventoEnFecha.participanteYaEstaRegistrado(participante)) {
                 return true;
             }
         }
@@ -99,7 +101,6 @@ public class GestorEventos {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(ruta))) {
             oos.writeObject(eventos);
         }
-
     }
 
     //2 Punto 6: Implemente método deserializar en la clase GestorEventos que cargue los eventos de un archivo serializado.
@@ -137,14 +138,13 @@ public class GestorEventos {
 
         for (Evento evento : eventos) {
             reporte.add (evento.reporte());
+            reporte.add("Participantes: ");
 
-            for (Participante participante : evento.getParticipantes()) {
-                reporte.add(participante.toString());
-            }
+            reporte.addAll(evento.obtenerReporteParticipantes());
+
         }
 
         File file = new File(ruta);
-
         Files.write(file.toPath(), reporte);
     }
 
